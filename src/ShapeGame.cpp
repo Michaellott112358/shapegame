@@ -4,6 +4,12 @@ int main()
 {
     auto window = sf::RenderWindow({1920u, 1080u}, "Shape Game");
     window.setFramerateLimit(60);
+   
+    sf::Texture texture;
+    sf::Sprite sprite;
+
+
+    
 
     while (window.isOpen())
     {
@@ -14,6 +20,8 @@ int main()
                 window.close();
             }
         }
+
+
 
         window.clear();
         window.display();
